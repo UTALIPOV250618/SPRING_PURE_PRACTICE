@@ -10,10 +10,10 @@ public class MainApp {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
-        Music music = context.getBean("testBean",Music.class);
-        MusicPlayer musicPlayer = new MusicPlayer(music);
-        musicPlayer.playMusic();
 
+        MusicPlayer musicPlayer =context.getBean("musicPlayer",MusicPlayer.class);
+        musicPlayer.playMusic();
+        context.close();
 
 
 
