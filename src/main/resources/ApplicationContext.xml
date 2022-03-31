@@ -7,14 +7,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="peaksoft.testbean.RockMusic">
-    </bean>
 
+<context:component-scan base-package="peaksoft.testbean"/>
     <!--This method via Setter -->
-    <bean id="musicPlayer" class="peaksoft.IoC.MusicPlayer">
-        <property name="music" ref="testBean"></property>
-    </bean>
+<!--    <bean id="musicPlayer" class="peaksoft.IoC.MusicPlayer">-->
+<!--        <property name="music" ref="testBean"></property>-->
+<!--    </bean>-->
 
     <!-- This method DI via Costructor-->
     <!--
