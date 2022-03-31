@@ -10,5 +10,15 @@
     <bean id="testBean"
           class="peaksoft.testbean.RockMusic">
     </bean>
+    <bean id="musicPlayer" class="peaksoft.IoC.MusicPlayer">
+        <property name="music" ref="testBean"></property>
+    </bean>
+
+    <!-- This method DI via Costructor-->
+    <!--
+    <bean id="musicPlayer"
+          class="peaksoft.IoC.MusicPlayer">
+        <constructor-arg ref="testBean"/>
+    </bean> -->
 
 </beans>

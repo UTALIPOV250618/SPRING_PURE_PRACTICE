@@ -17,6 +17,8 @@ public class MainApp {
 
 
 
+
+
 //        //Like in Hibernate: Customer customer = session.get(Customer.class,id);
 //
 //        //TestBean testbean = new TestBean("Ulukmyrza");
